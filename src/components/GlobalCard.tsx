@@ -18,6 +18,9 @@ function GlobalCards() {
           <p className="text-lg">Project Name</p>
           <p className="text-sm">Description:</p>
         </div>
+        <div className="relative top-[80%] left-[25%]">
+      <button className="bg-[#5CC94D] h-10 w-[5em] rounded-sm hover:text-black">Buy</button>
+      </div>
       </div>
     </>
   );
