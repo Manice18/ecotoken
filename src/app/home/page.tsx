@@ -5,7 +5,6 @@ import Homenav from "@/components/Homenav";
 import { Parallax, ParallaxLayer, IParallax } from "@react-spring/parallax";
 import Features from "./features";
 
-// Little helpers ...
 const url = (name: string, wrap = false) =>
   `${
     wrap ? "url(" : ""
@@ -216,21 +215,6 @@ export default function App() {
               Tokenized for a Sustainable World!
             </p>
           </ParallaxLayer>
-
-          {/* <ParallaxLayer
-          offset={1}
-          speed={0.1}
-          onClick={() => parallax.current.scrollTo(2)}
-          style={{
-            display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'center',
-          }}>
-          <Image
-          alt="cloud"
-          width={10}
-          height={10} src={url('bash')} style={{ width: '40%' }} />
-        </ParallaxLayer> */}
 
           <ParallaxLayer
             offset={1.9}
