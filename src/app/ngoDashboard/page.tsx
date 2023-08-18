@@ -87,15 +87,6 @@ function Page() {
                 <MyFormModal onDismiss={() => setIsPopUpOpen(false)} />
               )}
 
-              {/*<div className="w-[25vw]  ">*/}
-              {/*    <Cards/>*/}
-              {/*</div>*/}
-              {/* <div className="w-[25vw]" onClick={() => handleClick()}>
-            <Cards />
-          </div>
-          <div className="w-[25vw]  ">
-            <Cards />
-          </div> */}
               {cards?.map((value: any, index: any) => (
                 <div key={index}>
                   <Cards name={value.nameOfProject} desc={value.description} />
