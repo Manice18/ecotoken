@@ -29,7 +29,7 @@ const Navbar: FC<NavbarProps> = ({
             push("home");
           }}
         >
-          CarbonWorld
+         EcoToken
         </p>
       </div>
 
