@@ -9,7 +9,7 @@ function MiniCards() {
       >
         <div className="px-5 py-4">
           <div className="mb-2 text-xl font-bold text-white">
-            The Coldest Sunset
+            Amount
           </div>
           <p className="text-base text-white"></p>
         </div>
