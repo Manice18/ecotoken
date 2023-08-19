@@ -10,7 +10,7 @@ function SideBar({ data }: any) {
   const { connected, publicKey } = useWallet();
   return (
     <div className=" fixed flex  h-full flex-col bg-[#202123] ">
-      <div className=" px-[85px] py-[50px] font-Poppins">CarbonCoin</div>
+      <div className=" px-[85px] py-[50px] font-Poppins">EcoToken</div>
 
       <div className="">
         <Profile />
