@@ -21,16 +21,12 @@ const Navbar: FC<NavbarProps> = ({
 }) => {
   const { push } = useRouter();
   return (
-    <header className="sticky top-0 z-50 items-center border-b bg-white px-10 py-4 transition-all md:grid md:grid-cols-3 xl:px-10">
-      <div>
-        <p
-          className="cursor-pointer bg-transparent px-4 text-lg font-medium text-gray-800"
-          onClick={() => {
-            push("home");
-          }}
-        >
-          CarbonWorld
-        </p>
+    <header className="sticky top-0 z-50 items-center border-b bg-white px-10 py-4 font-Poppins transition-all md:grid md:grid-cols-3 xl:px-10">
+      <div
+        className="cursor-pointer text-3xl font-semibold text-[#54b946]"
+        onClick={() => push("/")}
+      >
+        EcoToken
       </div>
 
       <div className="flex flex-1 px-6 transition-all duration-300 xl:justify-center">
