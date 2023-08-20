@@ -13,7 +13,6 @@ import {
 } from "@solana/wallet-adapter-react";
 import { authorFilter } from "../utils";
 import { getAssociatedTokenAddress } from "@solana/spl-token";
-import { useDataStore } from "@/utils/dataStore";
 
 interface RefiProps {
   typeOfAccount: string;
@@ -412,9 +411,6 @@ export const useRefi = ({ typeOfAccount }: RefiProps) => {
       const data = await program.account.ngoAccount.all([
         authorFilter(publicKey.toString()),
       ]);
-      // console.log(data[0].account.nameOfNgo);
-      // updateNgoName(data[0].account.nameOfNgo);
-      // updateNgoName("bye");
     }
   };
 

@@ -1,9 +1,6 @@
 "use client";
-import { useDataStore } from "@/utils/dataStore";
-import React from "react";
 
 function Profile() {
-  // const ngoName = useDataStore((state) => state.ngoName);
   return (
     <div className="flex flex-col  items-center gap-4 font-Poppins">
       <div className="h-[100px] w-[100px] rounded-full  bg-white"></div>
