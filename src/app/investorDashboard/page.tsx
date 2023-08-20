@@ -6,17 +6,10 @@ import SearchBar from "@/components/SearchBar";
 import MiniCards from "@/components/MiniCards";
 import Cards from "@/components/Cards";
 import { investorDashboard } from "@/constants/dashboard";
-import { useRefi } from "@/hooks/useRefi";
-import { useWallet } from "@solana/wallet-adapter-react";
 import Loading from "@/components/Loading";
 
 function Page() {
   const [loading, setLoading] = useState<boolean>(true);
-  const { connected, publicKey } = useWallet();
-  const { sendSol } = useRefi({ typeOfAccount: "INVESTOR" });
-  const handleClick = async () => {
-    sendSol({ to: "9aYZU8Ed6cfHbqQNHXtjXLqPsLq1p9ft7Wv6n3vYHZFN" });
-  };
 
   useEffect(() => {
     setTimeout(() => {
@@ -56,7 +49,7 @@ function Page() {
                   Projects
                 </div>
                 <div className="grid grid-cols-1 gap-4 md:grid-cols-[repeat(auto-fill,minmax(200px,1fr))]">
-                  <div onClick={() => handleClick()}>
+                  <div>
                     <Cards
                       name="nature ngo"
                       desc="We are planting tress to reduce the amount of carbon captured."

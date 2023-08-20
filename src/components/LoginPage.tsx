@@ -45,7 +45,7 @@ const LoginPage: FC<LoginProps> = ({ name, extraDetails, typeOfAccount }) => {
       } else {
         if (x.length !== 0) {
           if (typeOfAccount === "NGO") push("ngoDashboard");
-          else if (typeOfAccount === "INVESTOR") push("investors");
+          else if (typeOfAccount === "INVESTOR") push("investorDashboard");
         }
       }
     };
@@ -59,7 +59,7 @@ const LoginPage: FC<LoginProps> = ({ name, extraDetails, typeOfAccount }) => {
       typeOfAccount: typeOfAccount,
     });
     if (typeOfAccount === "NGO") push("ngoDashboard");
-    else if (typeOfAccount === "INVESTOR") push("investors");
+    else if (typeOfAccount === "INVESTOR") push("investorDashboard");
   };
 
   return (

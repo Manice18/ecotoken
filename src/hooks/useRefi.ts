@@ -37,7 +37,7 @@ interface ProjectProps {
   carbonCaptured: number;
 }
 
-const value = new anchor.BN(1);
+// const value = new anchor.BN(1);
 
 export const useRefi = ({ typeOfAccount }: RefiProps) => {
   const { connection } = useConnection();
@@ -299,8 +299,9 @@ export const useRefi = ({ typeOfAccount }: RefiProps) => {
     }
   };
 
-  const sendSol = async ({ to }: { to: string }) => {
+  const sendSol = async ({ to, amount }: { to: string; amount: number }) => {
     if (program && publicKey) {
+      const value = new anchor.BN(amount);
       try {
         const [profilePda] = findProgramAddressSync(
           [utf8.encode("INVESTOR_STATE"), publicKey.toBuffer()],

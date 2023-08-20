@@ -39,7 +39,10 @@ const Navbar: FC<NavbarProps> = ({
         <p className="cursor-pointer rounded-full bg-transparent px-4 py-2 text-base font-medium text-gray-600 hover:bg-gray-100">
           Solution
         </p>
-        <p className="cursor-pointer rounded-full bg-transparent px-4 py-2 text-base font-medium text-gray-600 hover:bg-gray-100">
+        <p
+          className="cursor-pointer rounded-full bg-transparent px-4 py-2 text-base font-medium text-gray-600 hover:bg-gray-100"
+          onClick={() => push("globalMarketplace")}
+        >
           Market Place
         </p>
       </div>

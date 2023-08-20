@@ -12,7 +12,7 @@ export const ngoDashboard = [
 ]
 
 export const investorDashboard = [
-    { icon: <LayoutDashboard />, label: "Dashboard", href: "/investors" },
+    { icon: <LayoutDashboard />, label: "Dashboard", href: "/investorDashboard" },
     {
         icon: <ShoppingBag />,
         label: "Marketplace",
