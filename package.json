@@ -1,5 +1,5 @@
 {
-  "name": "carbon-world",
+  "name": "ecotoken",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -16,35 +16,31 @@
     "@solana/wallet-adapter-react-ui": "^0.9.33",
     "@solana/wallet-adapter-wallets": "^0.19.20",
     "@solana/web3.js": "^1.78.4",
-    "@types/node": "20.4.8",
-    "@types/react": "18.2.18",
+    "@types/node": "20.5.8",
+    "@types/react": "18.2.21",
     "@types/react-dom": "18.2.7",
-    "autoprefixer": "10.4.14",
-    "chart.js": "^4.3.3",
+    "@types/react-vertical-timeline-component": "^3.3.3",
+    "autoprefixer": "10.4.15",
+    "bigint-buffer": "^1.1.5",
+    "chart.js": "^4.4.0",
     "clsx": "^2.0.0",
-    "eslint": "8.46.0",
-    "eslint-config-next": "13.4.12",
-    "fs": "^0.0.1-security",
-    "lokijs": "^1.5.12",
-    "next": "13.4.12",
-    "npm": "^9.8.1",
-    "pino-pretty": "^10.2.0",
-    "postcss": "8.4.27",
+    "eslint": "8.48.0",
+    "eslint-config-next": "13.4.19",
+    "lucide-react": "^0.274.0",
+    "next": "13.4.19",
+    "postcss": "8.4.29",
     "react": "18.2.0",
     "react-chartjs-2": "^5.2.0",
     "react-dom": "18.2.0",
-    "react-icons": "^4.10.1",
     "react-loading-skeleton": "^3.3.1",
     "react-pro-sidebar": "^1.1.0-alpha.1",
     "react-vertical-timeline-component": "^3.6.0",
     "tailwindcss": "3.3.3",
-    "typescript": "5.1.6",
-    "zustand": "^4.4.1"
+    "typescript": "5.2.2"
   },
   "devDependencies": {
-    "@types/react-vertical-timeline-component": "^3.3.3",
     "encoding": "^0.1.13",
-    "prettier": "^3.0.1",
-    "prettier-plugin-tailwindcss": "^0.5.1"
+    "prettier": "^3.0.3",
+    "prettier-plugin-tailwindcss": "^0.5.4"
   }
 }
